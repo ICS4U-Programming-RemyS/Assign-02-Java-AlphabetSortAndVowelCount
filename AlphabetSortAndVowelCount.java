@@ -210,20 +210,30 @@ final class AlphabetSortAndVowelCount {
 
         // Create arrays from the lists for return
         // Used
-        // https://www.w3schools.com/java/ref_arraylist_toarray.asp
+    // https://www.w3schools.com/java/ref_arraylist_toarray.asp
         // to convert the ArrayList to an array
         String[] sortedWords = listWords.toArray(new String[0]);
 
         // Convert listVowelCounts to String[]
         String[] sortedVowelCounts = new String[listVowelCounts.size()];
+        // For loop to add the new sorted index to the array
         for (int index = 0; index < listVowelCounts.size(); index++) {
+            // Convert the vowel count to a string
+            // Used
+    // https://www.w3schools.com/java/ref_string_valueof.asp
+            // for the String.valueOf method
             sortedVowelCounts[index]
             = String.valueOf(listVowelCounts.get(index));
         }
 
         // Convert listYCounts to String[]
         String[] sortedYCounts = new String[listYCounts.size()];
+        // For loop to add the new sorted index to the array
         for (int index = 0; index < listYCounts.size(); index++) {
+            // Convert the y count to a string
+            // Used
+    // https://www.w3schools.com/java/ref_string_valueof.asp
+            // for the String.valueOf method
             sortedYCounts[index] = String.valueOf(listYCounts.get(index));
         }
 
