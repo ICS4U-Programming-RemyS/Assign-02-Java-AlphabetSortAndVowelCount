@@ -184,7 +184,7 @@ final class AlphabetSortAndVowelCount {
         for (int pass = 0; pass < listWords.size(); pass++) {
             for (int index = 0; index < listWords.size() - pass - 1; index++) {
                 // Check if the word is greater than the next word
-                // Used 
+                // Used
     // https://www.w3schools.com/java/ref_string_comparetoignorecase.asp
                 // for the compareTo method
                 if
