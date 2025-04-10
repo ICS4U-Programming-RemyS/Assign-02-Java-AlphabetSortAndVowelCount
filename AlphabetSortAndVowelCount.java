@@ -143,6 +143,12 @@ final class AlphabetSortAndVowelCount {
         // For loop to count number of vowels in a word
         for (int letter = 0; letter < word.length(); letter++) {
             // Check if the letter is a vowel
+            // Used
+    // https://www.tutorialspoint.com/java/lang/character_tolowercase.htm
+            // for the Character.toLowerCase method
+            // Used
+    // https://stackoverflow.com/questions/69841442/count-all-vowels-in-a-string
+            // for charAt method
             if (Character.toLowerCase(word.charAt(letter)) == 'a'
                     || Character.toLowerCase(word.charAt(letter)) == 'e'
                     || Character.toLowerCase(word.charAt(letter)) == 'i'
@@ -178,6 +184,9 @@ final class AlphabetSortAndVowelCount {
         for (int pass = 0; pass < listWords.size(); pass++) {
             for (int index = 0; index < listWords.size() - pass - 1; index++) {
                 // Check if the word is greater than the next word
+                // Used 
+    // https://www.w3schools.com/java/ref_string_comparetoignorecase.asp
+                // for the compareTo method
                 if
                 (listWords.get(index).compareTo(listWords.get(index + 1)) > 0) {
                     // Swap the words
