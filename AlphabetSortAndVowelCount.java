@@ -70,6 +70,7 @@ final class AlphabetSortAndVowelCount {
             // Set line equal to the next line
             String line = scanner.nextLine();
 
+            // Check how many words are on the line
             String[] lineWords = line.split(" ");
 
             // For loop to add word to list of word and count vowels and y
@@ -208,6 +209,9 @@ final class AlphabetSortAndVowelCount {
         }
 
         // Create arrays from the lists for return
+        // Used
+        // https://www.w3schools.com/java/ref_arraylist_toarray.asp
+        // to convert the ArrayList to an array
         String[] sortedWords = listWords.toArray(new String[0]);
 
         // Convert listVowelCounts to String[]
